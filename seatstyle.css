@@ -1,0 +1,35 @@
+  
+   body {
+    background-color: blanchedalmond;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 120px;
+    margin-right: 100px;
+    text-align: right;
+}
+
+.seatplan h1 {
+    margin-right:40px;
+}
+
+   form {
+    background: floralwhite;
+    margin-left: 500px;
+    border-radius: 10px; /* You can adjust the percentage as needed */
+    padding: 330px; /* Adjust padding as needed */
+    max-width: 2000px; /* Adjust this value to make the box bigger */
+    position: relative;
+}
+
+.text-box {
+    position: absolute;
+    top: 40px; /* Adjust top distance */
+    right: 30px; /* Adjust right distance */
+    padding: 20px 30px; /* Adjust padding as needed */
+    background-color: rgb(255, 166, 0); /* Adjust background color as needed */
+    border-radius: 30px; /* Adjust border radius as needed */
+}
+    
+
+
+
+
