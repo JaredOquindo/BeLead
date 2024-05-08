@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            #main{
-                display: flex;
-            }
-            .left-column{
-                justify-content: flex-start;
-                width: 50%;
-            }
-            .right-column{
-                justify-content: flex-end;
-                width: 50%;
-            }
-            input[type=email],[type=password]{
-                border-radius: 15px;
-                width: 90%;
-                height: 25px;
-                border: solid 1px;
-                margin: 0 auto;
-                
-            }
-        </style>
-    </head>
-    <body>
-            <div id="main">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        #main {
+            display: flex;
+        }
 
-                <div class="left-column">
-                    <h1>Hello World</h1>
-                </div>
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
 
-                <div class="right-column">
-                    <h2>Email</h2>
-                    <input type="email">
-                    <h1>Password:</h1>
-                    <input type="password">
-                    <br><br>
-                    <input type="button" value="Log In">
-                    <h1>Forgot Password</h1>
-                </div>
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
 
-            </div>
-    </body>
+        input[type=email],
+        input[type=password] {
+            border-radius: 15px;
+            width: 250px; /* Adjust the width as needed */
+            height: 25px;
+            border: solid 1px;
+            margin: 10px 0;        
+        }
+
+        input[type=submit] {
+            border-radius: 15px;
+            height: 35px;
+            width: 250px; /* Adjust the width as needed */
+            margin: 10px 0; /* Adjust the margin as needed */
+            background-color: #E3A72F;
+            color: white;
+            border: none;
+        }
+
+        .right-column h5 {
+            text-align: center;
+            font-family: "Kodchasan", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        .right-column h3 {
+            font-family: "Kodchasan", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="left-column">
+            <h1>Hello World</h1>
+        </div>
+        <div class="right-column">
+            <form action="">
+                <h3>EMAIL:</h3>
+                <input type="email">
+                <h3>PASSWORD:</h3>
+                <input type="password">
+                <br><br>
+                <input type="submit" value="Log In">
+                <h5>Forgot Password</h5>
+                <h5>Sign Up</h5>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
