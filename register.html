@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; /* Center the columns horizontally */
+            align-items: center;
+            height: 100%;
+            background-image: url('LOGIN_BCKG.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        #main {
+            display: flex;
+            width: 80%; /* Adjust the width of the columns */
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+
+        input[type=email],
+        input[type=password],
+        input[type=date],
+        input[type=text] {
+            border-radius: 20px;
+            width: 300px; 
+            height: 30px;
+            border: solid 1px;
+            margin: 10px 0; 
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+            box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.50);
+            appearance: none;
+            text-align: center;
+            font-family: "Kodchasan", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        input[type=submit] {
+            border-radius: 15px;
+            height: 30px;
+            width: 200px; 
+            margin: 10px auto; /* Center the submit button horizontally */
+            margin-top: 20px; /* Adjust the margin-top to center the submit button vertically */
+            background-color: #E3A72F;
+            color: white;
+            border: none;
+            display: block;
+            font-family: "Changa One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+        }
+
+        .right-column h3 {
+            font-family: "Kodchasan", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            color: white;
+            margin: 1px auto; /* Adjust the margin to move the text closer to the input boxes */
+            font-size: 12px; /* Adjust the font size of the text */
+        }
+
+        .right-column h5 {
+            text-align: center;
+            font-family: "Kodchasan", sans-serif;
+            font-style: normal;
+            color: white;
+            margin: 0; /* Remove the default margin */
+            margin-top: 20px; /* Adjust the margin-top to center the h5 tags vertically */
+        }
+        .right-column p {
+            font-family: "Changa One", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 5px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="main">
+            <div class="left-column">
+            </div>
+            <div class="right-column">
+                <form action="">
+                    <p>Create new</p>
+                    <p>Account</p>
+                    <h3>NAME:</h3>
+                    <input type="text">
+                    <h3>EMAIL:</h3>
+                    <input type="email">
+                    <h3>PASSWORD:</h3>
+                    <input type="password">
+                    <h3>DATE OF BIRTH:</h3>
+                    <input type="date" name="" id="">
+                    <h3>SCHOOL:</h3>
+                    <input type="text" name="" id="">
+                    <input type="submit" value="Sign Up">
+                    <h5 style="color: #FFC654;">Already Registered?</h5> <h5> Log in here.</h5>
+                </form>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
