@@ -1,44 +1,99 @@
 body{
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: linear-gradient(to top, #503d2e, #57412e, #5d462d, #634b2c, #68502b, #7d5c3d, #906951, #a37666, #be9496, #d1b7c1, #e4dbe4, #ffffff);    
+    background-image: linear-gradient(to top, #503d2e, #57412e, #5d462d, #634b2c, #68502b, #7d5c3d, #906951, #a37666, #be9496, #d1b7c1, #e4dbe4, #ffffff);
+}
+.logo{
+    float: left;
 }
 .header{
     font-family: 'Changa One';
     color: white;
     text-shadow: 2px 2px 4px #47392d;
     text-align: right;
-    width: 1350px;
+    width: 95%;
     padding: 10px;
-    margin: 10px;
 }
 .content{
     border-radius: 12px;
     background-color: #ffffff9e;
     position: absolute;
-    height: 600px;
-    width: 1090px;
-    left: 300px;
-    border: 1px solid rgba(0, 0, 0, 0.397);
-    padding: 10px;
-    margin: 10px;
+    height: 80%;
+    width: 65%;
+    left: 20%;
+    padding: 1%;
+    margin: 1%;
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+    padding-left: 10%;
 }
+
+.sign{
+    margin-top: 5%;
+    margin-left: 10%;
+    font-family: 'Changa One';
+    color: #47392d;
+    font-size:larger;
+    float: left;
+}
+.head{
+    margin-top: 10px;
+    height: 10%;
+    margin-bottom: 2%;
+}
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+    background-color: #E3A72F;
+    border-radius: 50px;
+    margin-left: 65%;
+    width: 30%;
+    height: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    padding-right: 1%;
+}
+.inside{
+    background-color: white;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+    font-family: 'Changa One';
+    letter-spacing: 1px;
+    color:#47392d;
+    text-shadow: 2px 2px 4px #47392d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    margin-left:3%;
+    float: left;
+    width: 30%;
+    height: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    cursor: pointer;
+}
+.inside:hover{
+    background-color: #47392d;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transform: translateY(1px);
+}
+
 .class{
     border-radius: 12px;
     background-color: #ffffff9e;
     position: absolute;
-    height: 600px;
+    height: 80%;
     left: auto;
-    width: 250px;
+    width: 15%;
     border: 1px solid rgba(0, 0, 0, 0.397);
-    padding: 10px;
-    margin: 10px;
+    padding: 1%;
+    margin: 1%;
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
 }
 .dashboard{
     font-family: 'Changa One';
-    font-size: 30px;
+    font-size:larger;
     padding-left: 20px;
     color: white;
     text-shadow: 2px 2px 4px #47392d;
@@ -49,7 +104,7 @@ body{
     padding-left: 35px;
 }
 .dash{
-    height: 330px;
+    height: 60%;
     border-radius: 12px;
     margin: 10px;
     padding: 5px;
@@ -60,13 +115,14 @@ body{
     font-family: 'Changa One';
     border-radius: 12px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    width: 160px;
+    width: 70%;
     height: 30px;
     padding: 5px;
     box-sizing: border-box;
     background-color: #E3A72F;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+    color: #47392d;
 }
 .profile:hover,.settings:hover,.logout:hover {
     background-color: #47392d;
@@ -81,8 +137,8 @@ body{
     padding-left: 15px;
     border-radius: 12px;
     background-color: #47392d;
-    width: 190px;
-    height: 50px;
+    width: 90%;
+    height: 15%;
     margin-bottom: 10px;
     color: white;
     transition: all 0.3s ease 0s;
@@ -95,8 +151,8 @@ body{
     padding-left: 15px;
     border-radius: 12px;
     background-color: #47392d75;
-    width: 190px;
-    height: 50px;
+    width: 90%;
+    height: 15%;
     margin-bottom: 10px;
     color: white;
     transition: all 0.3s ease 0s;
