@@ -43,15 +43,23 @@
         }
 
         input[type=email],
-        input[type=password] {
+        input[type=password],
+        input[type=date],
+        input[type=text] {
             border-radius: 20px;
             width: 300px; 
             height: 30px;
             border: solid 1px;
             margin: 10px 0; 
             padding-left: 10px;
+            padding-right: 10px;
             border: none;
             box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.50);
+            appearance: none;
+            text-align: center;
+            font-family: "Kodchasan", sans-serif;
+            font-style: normal;
+            font-weight: 700;
         }
 
         input[type=submit] {
@@ -73,7 +81,7 @@
         .right-column h3 {
             font-family: "Kodchasan", sans-serif;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 500;
             color: white;
             margin: 1px auto; /* Adjust the margin to move the text closer to the input boxes */
             font-size: 12px; /* Adjust the font size of the text */
@@ -83,10 +91,19 @@
             text-align: center;
             font-family: "Kodchasan", sans-serif;
             font-style: normal;
-            font-weight: 700;
             color: white;
             margin: 0; /* Remove the default margin */
             margin-top: 20px; /* Adjust the margin-top to center the h5 tags vertically */
+        }
+        .right-column p {
+            font-family: "Changa One", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 5px;
+            margin-top: 0px;
         }
     </style>
 </head>
@@ -97,14 +114,20 @@
             </div>
             <div class="right-column">
                 <form action="">
+                    <p>Create new</p>
+                    <p>Account</p>
+                    <h3>NAME:</h3>
+                    <input type="text">
                     <h3>EMAIL:</h3>
                     <input type="email">
                     <h3>PASSWORD:</h3>
                     <input type="password">
-                    <br><br>
-                    <input type="submit" value="Log In">
-                    <h5>Forgot password?</h5>
-                    <h5>Sign up!</h5>
+                    <h3>DATE OF BIRTH:</h3>
+                    <input type="date" name="" id="">
+                    <h3>SCHOOL:</h3>
+                    <input type="text" name="" id="">
+                    <input type="submit" value="Sign Up">
+                    <h5 style="color: #FFC654;">Already Registered?</h5> <h5> Log in here.</h5>
                 </form>
             </div>
         </div>
