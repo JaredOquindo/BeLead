@@ -1,38 +1,62 @@
-  
-   body {
-    background-color: blanchedalmond;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 120px;
-    margin-right: 100px;
-    text-align: right;
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to top, #503d2e, #57412e, #5d462d, #634b2c, #68502b, #7d5c3d, #906951, #a37666, #be9496, #d1b7c1, #e4dbe4, #ffffff);    
 }
+.container {
+    display: flex;
+    justify-content: center; /* Center the columns horizontally */
+    align-items: center;
+    height: 100%;
+    background-image: url('Frame 42.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .seatplan h1 {
-    margin-right:40px;
+    margin-left:auto;
 }
 
-   form {
+form {
     background: floralwhite;
     margin-left: 350px;
-    border-radius: 10px; /* You can adjust the percentage as needed */
-    padding: 290px; /* Adjust padding as needed */
-    max-width: 2000px; /* Adjust this value to make the box bigger */
+    border-radius: 10px;
+    padding: 200px; /* Adjust padding as needed */
     position: relative;
-}
+    box-shadow: inset 0 0 9px #000000;
+    width: 1080px;
+    height: 320px;
 
+}
 .text-box {
     position: absolute;
     top: 40px; /* Adjust top distance */
     right: 30px; /* Adjust right distance */
-    padding: 15px 10px; /* Adjust padding as needed */
+    padding: 20px 20px; /* Adjust padding as needed */
     background-color: rgb(255, 166, 0); /* Adjust background color as needed */
     border-radius: 30px; /* Adjust border radius as needed */
-    font-size: 12px;
+    font-size: 15px;
+    box-shadow: inset 0 0 5px #000000;  
 }
+/*NO BEHIND THE BOX*/ 
 
-
-    
-
+.text-inside {
+    background: rgb(145, 127, 93);
+    border-radius: 30px;
+    padding: 20px; /* Adjust padding as needed */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: flex-start; /* Align items at the start */
+    align-items: center; /* Center the content horizontally */
+    box-shadow: inset 0 0 9px #000000;
+    width: 1350px; /* Adjust width as needed */
+    height: 530px; /* Adjust height as needed */
+    margin-left: -150px; /* Move the box to the left */
+    margin-top: -80px;
+    font-size: larger;
+}
 
 
 
