@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Changa One' rel='stylesheet'>
-    <title>WAWA|part</title>
+    <title>Dale</title>
+    <link rel="stylesheet" href="Website.css">
 </head>
 <style>
-body{
+    body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: linear-gradient(to top, #503d2e, #57412e, #5d462d, #634b2c, #68502b, #7d5c3d, #906951, #a37666, #be9496, #d1b7c1, #e4dbe4, #ffffff);
+}
+.body{
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+    background-color: #E7E7E7;
+    border-radius: 50px;
+    height: 80%;
+    font-family: 'Changa One';
+    width: 80%;
+    margin-top: 3%;
 }
 .logo{
     float: left;
@@ -175,17 +186,17 @@ body{
 }    
 ::-webkit-scrollbar-track {
     border: 1px solid #ffffff00;
-    border-radius: 10px;
+    border-radius: 3px;
 }    
 ::-webkit-scrollbar-thumb {
     background: #503d2e2d;  
-    border-radius: 10px;
+    border-radius: 3px;
 }    
 ::-webkit-scrollbar-thumb:hover {
     background: #47392d; 
 }
 .text-inside {
-    background: #7C7063; 
+    background: #E7E7E7; 
     display: flex;   
     justify-content: center; 
     align-items: top; 
@@ -246,59 +257,147 @@ body{
     font-size: 25px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
     position: absolute;
-    bottom: 20%; 
-    left: 56%;
+    bottom: 10%; 
+    left: 85%;
     font-family: 'Changa One';
 }
+.code{
+    background-color: white;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+    font-family: 'Changa One';
+    letter-spacing: 1px;
+    color:#47392d;
+    text-shadow: 2px 2px 4px #47392d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.3%;
+    border-radius: 50px;
+    margin-left:58%;
+    float: left;
+    width: 5%;
+    height: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    cursor: pointer;   
+}
+.code:hover{
+    background-color: #47392d;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transform: translateY(1px);
+}
+.member-box{
+    font-family: 'Changa One';
+    text-align:left;
+    padding-left: 15px;
+    border-radius: 12px;
+    margin-top:1%;
+    background-color: white;
+    width: 90%;
+    height: 5%;
+    margin-bottom: 10px;
+    color: white;
+}
+.memberslist{
+    margin-left: -7%;
+    margin-top: 8%;
+    height: 67%;
+    overflow: scroll;
+    width: 95%;
+}
+input[type=imagecircle], select {
+    width: 95%;
+    padding: 1% 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+  }
+  .text2 h2{
+    color:#503D2E;
+    font-family: 'Changa One';
+    word-spacing: 9px;
+    text-align: center;
+    margin-top: 4%;
+    margin-left: -15%;
+    font-size: 30px; 
+  }
+.name{
+    color:#503D2E;
+    font-family: 'Changa One';
+    word-spacing: 9px;
+    text-align: center;
+    font-size: 30px; 
+    margin-left: 0%;
+    margin-top: 3%;
+}
 </style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Changa One' rel='stylesheet'>
-    <title>Joshua|part</title>
-    <link rel="stylesheet" href="web.css">
-</head>
 <body>
     <div class="logo">
         <img src="https://github.com/JaredOquindo/BeLead/blob/main/Beleadd.png?raw=true" alt="Trulli" width="100" height="100">
     </div>
     <div class="header">
-        <h1>SEAT PLAN</h1>
+        <h1>DASHBOARD</h1>
     </div>
-    <div class="content">
-        <div class="head">
-            <div class="outer">
-                <div class="inside">
-                    <h6>ATTENDANCE</h6>
-                </div>
-                <div class="inside">
-                    <h6>SEAT PLAN</h6>
-                </div>
-                <div class="inside">
-                    <h6>MEMBERS</h6>
-                </div>
+  
+        <div class="content">
+            <div class="text2">
+                <h2>Please provide the list of the students for this class.</h2>
             </div>
-        </div>
                 <div class="text-inside">
-                    <h2>Please specify the number of Columns, Rows, and Aisles for the seating arrangement.</h2>
+                    <div class="name">
+                        <h3>Name:</h3>
+                    </div>
+                    <div class="memberslist">
+                        <form action="/action_page.php">
+                            <input type="imagecircle" id="fname" name="fname">
+                            
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                           
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                            
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                            
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                            
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                           
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                           
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                           
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                          
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                           
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                           
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                           
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                            
+                            <br>
+                            <input type="imagecircle" id="fname" name="fname">
+                           
+                            <br>  
+                        </form>
+                        </div>
                 </div>
-                <div class="behind-circle">
-                    <div class="input-group">
-                        <label for="col">Columns</label>
-                        <input type="number" id="col" value="1">
-                    </div>
-                    <div class="input-group">
-                        <label for="row">Rows</label>
-                        <input type="number" id="row" value="4">
-                    </div>
-                    <div class="input-group">
-                        <label for="aisle">Aisles</label>
-                        <input type="number" id="aisle" value="3"> 
-                    </div>
-                </div>
-                <button class="next-button">NEXT</button>
+                <button class="next-button">CREATE</button>
+    </div>
+
     </div>
     <div class="class">
         <h3 class="dashboard">DASHBOARD</h3>

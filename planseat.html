@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Changa One' rel='stylesheet'>
+    <title>WAWA|part</title>
+</head>
+<style>
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to top, #503d2e, #57412e, #5d462d, #634b2c, #68502b, #7d5c3d, #906951, #a37666, #be9496, #d1b7c1, #e4dbe4, #ffffff);
+}
+.logo{
+    float: left;
+}
+.header{
+    font-family: 'Changa One';
+    color: white;
+    text-shadow: 2px 2px 4px #47392d;
+    text-align: right;
+    width: 95%;
+    padding: 10px;
+}
+.content{
+    border-radius: 12px;
+    background-color: #ffffff9e;
+    position: absolute;
+    height: 80%;
+    width: 65%;
+    left: 20%;
+    padding: 1%;
+    margin: 1%;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+    padding-left: 10%;
+}
+
+.sign{
+    margin-top: 5%;
+    margin-left: 10%;
+    font-family: 'Changa One';
+    color: #47392d;
+    font-size:larger;
+    float: left;
+}
+.head{
+    margin-top: 10px;
+    height: 10%;
+    margin-bottom: 2%;
+}
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+    background-color: #E3A72F;
+    border-radius: 50px;
+    margin-left: 65%;
+    width: 30%;
+    height: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    padding-right: 1%;
+}
+.inside{
+    background-color: white;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+    font-family: 'Changa One';
+    letter-spacing: 1px;
+    color:#47392d;
+    text-shadow: 2px 2px 4px #47392d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    margin-left:3%;
+    float: left;
+    width: 30%;
+    height: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    cursor: pointer;
+}
+.inside:hover{
+    background-color: #47392d;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transform: translateY(1px);
+}
+
+.class{
+    border-radius: 12px;
+    background-color: #ffffff9e;
+    position: absolute;
+    height: 80%;
+    left: auto;
+    width: 15%;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    padding: 1%;
+    margin: 1%;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+}
+.dashboard{
+    font-family: 'Changa One';
+    font-size:larger;
+    padding-left: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px #47392d;
+}
+.login{
+    margin: 10px;
+    text-align: center;
+    padding-left: 35px;
+}
+.dash{
+    height: 60%;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 5px;
+    overflow: scroll;
+
+}
+.profile,.settings,.logout{
+    font-family: 'Changa One';
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #E3A72F;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    color: #47392d;
+}
+.profile:hover,.settings:hover,.logout:hover {
+    background-color: #47392d;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.subjects{
+    font-family: 'Changa One';
+    text-align:left;
+    padding-left: 15px;
+    border-radius: 12px;
+    background-color: #47392d;
+    width: 90%;
+    height: 15%;
+    margin-bottom: 10px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+}
+.nosubjects{
+    font-family: 'Changa One';
+    text-align:left;
+    padding-left: 15px;
+    border-radius: 12px;
+    background-color: #47392d75;
+    width: 90%;
+    height: 15%;
+    margin-bottom: 10px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}    
+::-webkit-scrollbar-track {
+    border: 1px solid #ffffff00;
+    border-radius: 10px;
+}    
+::-webkit-scrollbar-thumb {
+    background: #503d2e2d;  
+    border-radius: 10px;
+}    
+::-webkit-scrollbar-thumb:hover {
+    background: #47392d; 
+}
+.text-inside {
+    color:#503D2E;
+    font-family: 'Changa One';
+    margin-top: 5%;
+    text-align: center;
+    margin-left: -10%;
+    font-size:x-large;
+    margin-top: 10px;
+}
+.subject-name{
+    font-family: 'Changa One';
+    color:#503D2E;
+    margin-top:3%;
+    margin-left: 55px;
+}
+.subject-box input{
+    padding: 10px;
+    border: none;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    text-align: center;
+    background-color: white; 
+    margin-left: -9%;
+    width: 30%;
+      }
+.subject-code{
+    color:#503D2E;
+    font-family: 'Changa One';
+    margin-top: -9%;
+    text-align: center;
+    margin-left:50%;
+    padding: 5.5px;
+}
+.subject-boxes input{
+    padding: 11px;
+    border: none;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    background-color: white; 
+    width:58%;
+      margin-left: -2%;  
+}
+
+.Subject-Schedule{
+    background: #7C7063; 
+    color: white;
+    display: flex;   
+    justify-content: center; 
+    align-items: top; 
+    padding-bottom: 25%;
+    width: 50%; 
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 50px;
+    margin-top: 3%;
+    margin-left: 18%;     
+    border: none;   
+    font-family: 'Changa One';
+    word-spacing: 10px;
+    letter-spacing: 3px;
+}
+.Timer{
+    font-family: 'Changa One';
+    color:#503D2E;
+    margin-left: 40%;
+    margin-top:-25%;
+}   
+.time{
+    margin-left: 26%;
+}
+.time input{
+        border-radius: 90px;
+        width: 10%;
+        margin-top:auto;
+        border: none;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);  
+        height: 30px;
+        text-align: center;
+}
+.day{
+    font-family: 'Changa One';  
+    color:#503D2E;  
+    margin-left: 40.5%;
+    margin-top: 3%;
+}
+.week {
+    margin-left: 26%;
+}
+.week input{
+        border-radius: 90px;
+        width: 5%;
+        border: none;
+        height: 30px;
+        text-align: center;
+        margin-left: 5%;
+      
+}
+.weekday input{
+        margin-top: 3%;
+        margin-bottom: 11%;
+        margin-left: 5.2%;
+}
+.schoolday{
+    margin-top: 10px;
+    font-family: 'Changa One';  
+    color: white;
+}
+.next-button {
+    border-radius: 25px;
+    height: 5%;
+    width: 6%;
+    background-color:#503d2e;
+    color: white;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    position: absolute;
+    bottom: 20%; 
+    right: 22%;
+    font-family: 'Changa One';
+    margin-bottom: -8%;
+}
+
+</style>
+<body>
+    <div class="logo">
+        <img src="https://github.com/JaredOquindo/BeLead/blob/main/Beleadd.png?raw=true" alt="Trulli" width="100" height="100">
+    </div>
+    <div class="header">
+        <h1>DASHBOARD</h1>
+    </div>
+    <div class="content">
+        <div class="head">
+            <div class="outer">
+                <div class="inside">
+                    <h6>ATTENDANCE</h6>
+                </div>
+                <div class="inside">
+                    <h6>SEAT PLAN</h6>
+                </div>
+                <div class="inside">
+                    <h6>MEMBERS</h6>
+                </div>
+            </div>
+        </div>
+        <div class="text-inside">
+            <h2>Please provide the details for the class</h2>
+        </div>
+        <div class="subject-name">
+            <h2>SUBJECT NAME</h2>
+            <div class="subject-box">
+                <label for="subject-name"></label>
+                <input type="text" id="subject-name" name="subject-name" value="">
+            </div>
+        </div>
+        <div class="subject-code">
+            <h2>SUBJECT CODE</h2>
+            <div class="subject-boxes">
+                <label for="subject-code"></label>
+                <input type="text" id="subject-code" name="subject-code" value="" class="">
+            </div>
+        </div>
+            <div class="Subject-Schedule">
+                <h2>Subject Schedule</h2>
+            </div>  
+            <div class="Timer">
+                <h2>Time</h2>
+            </div>
+            <div class="time">
+                <span> 
+                    <input type="timex1">
+                    <input type="timex2" id="time" value="">
+                    <span>-</span>
+                    <input type="timex3">
+                    <input type="timex4"id="time" value="">
+                </span>
+            </div>
+            <div class="day">
+                <h2>Day</h2>
+            </div>
+            <div class="schoolday">
+            <div class="week">
+                <span>
+                    <input type="radio">Mon</span>
+                    <input type="radio">Wed</span>
+                    <input type="radio">Fri</span>
+                </span>
+            <div class="weekday">
+                <span>
+                    <input type="radio">Tue</span>
+                    <input type="radio">Thu</span>
+                    <input type="radio">Sat</span>
+                </span>
+            </div>
+            <button class="next-button">NEXT</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="class">
+        <h3 class="dashboard">DASHBOARD</h3>
+        <div class="dash">
+            <div class="subjects">
+                <h1>ITMC</h1>
+            </div>
+            <div class="nosubjects"></div>
+            <div class="nosubjects"></div>
+            <div class="nosubjects"></div>
+            <div class="nosubjects"></div>
+            <div class="nosubjects"></div>
+            <div class="nosubjects"></div>
+            <div class="nosubjects"></div>
+            <div class="nosubjects"></div>
+            <div class="nosubjects"></div>
+            <div class="nosubjects"></div>
+        </div>
+        <div class="login">
+            <h5 class="profile">profile</h5>
+            <h5 class="settings">Settings</h5>
+            <h5 class="logout">Logout</h5>
+        </div>
+    </div>
+</body>
+</html>
